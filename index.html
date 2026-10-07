@@ -1,11 +1,117 @@
 <!doctype html>
+<html lang="en">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>ICSZ Studios</title>
-<h1>ICSZ Studios</h1>
-<p>RaptorDash — a phone dashboard for sim racing, with a free PC bridge.</p>
-<ul>
-  <li><a href="/pc/">Download RaptorDash Bridge for Windows</a></li>
-  <li><a href="/privacy/">Privacy policy</a></li>
-</ul>
+<title>ICSZ Studios — RaptorDash</title>
+<meta name="description" content="RaptorDash turns your phone into a live dashboard for sim racing, with a free Windows bridge that reads telemetry from 24 racing games.">
+<style>
+  :root{
+    --bg:#000; --s1:#0E0E11; --s2:#16161A; --line:#1F1F25;
+    --fg:#F2F2F5; --fg2:#9B9BA6; --fg3:#6A6A75; --hot:#FF7A1A;
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0; background:var(--bg); color:var(--fg);
+    font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:880px; margin:0 auto; padding:0 24px}
+  header{border-bottom:1px solid var(--line); padding:22px 0}
+  .mark{display:flex; align-items:center; gap:11px; font-weight:800; letter-spacing:.14em; font-size:14px}
+  .bar{width:7px; height:21px; background:var(--hot); border-radius:4px}
+  .mark span{color:var(--hot)}
+  h1{font-size:clamp(30px,6vw,46px); line-height:1.12; margin:54px 0 16px; letter-spacing:-.02em}
+  h1 em{font-style:normal; color:var(--hot)}
+  .lede{color:var(--fg2); font-size:clamp(16px,2.4vw,19px); max-width:62ch; margin:0 0 32px}
+  .cta{display:flex; flex-wrap:wrap; gap:12px; margin-bottom:14px}
+  a.btn{
+    display:inline-block; padding:13px 22px; border-radius:9px; text-decoration:none;
+    font-weight:600; font-size:15px; background:var(--hot); color:#140800;
+  }
+  a.btn.ghost{background:transparent; color:var(--fg); border:1px solid #2A2A32}
+  a.btn:hover{filter:brightness(1.08)}
+  a.btn.ghost:hover{border-color:var(--hot); color:var(--hot); filter:none}
+  .fine{color:var(--fg3); font-size:13px; margin:0 0 64px}
+  h2{font-size:13px; letter-spacing:.16em; text-transform:uppercase; color:var(--fg3);
+     margin:0 0 22px; font-weight:700}
+  section{padding:0 0 60px}
+  .steps{display:grid; gap:14px; grid-template-columns:repeat(auto-fit,minmax(210px,1fr)); margin:0; padding:0; list-style:none}
+  .steps li{background:var(--s1); border:1px solid var(--line); border-radius:12px; padding:18px}
+  .steps b{display:block; color:var(--hot); font-size:12px; letter-spacing:.1em; margin-bottom:7px}
+  .steps p{margin:0; color:var(--fg2); font-size:14px; line-height:1.55}
+  .tags{display:flex; flex-wrap:wrap; gap:8px}
+  .tags span{background:var(--s2); border:1px solid var(--line); color:var(--fg2);
+             border-radius:999px; padding:6px 13px; font-size:13px}
+  .note{background:var(--s1); border:1px solid var(--line); border-left:3px solid var(--hot);
+        border-radius:10px; padding:17px 19px; color:var(--fg2); font-size:14.5px}
+  .note b{color:var(--fg)}
+  footer{border-top:1px solid var(--line); padding:26px 0 50px; color:var(--fg3); font-size:13.5px}
+  footer a{color:var(--fg2)}
+  a{color:var(--hot)}
+</style>
 
+<header>
+  <div class="wrap">
+    <div class="mark"><i class="bar"></i>ICSZ <span>STUDIOS</span></div>
+  </div>
+</header>
+
+<main class="wrap">
+  <h1>Your phone, as a <em>sim racing dashboard</em>.</h1>
+  <p class="lede">
+    RaptorDash shows live telemetry from the racing game on your PC — speed, revs,
+    gear, lap and stage times, tyre and brake temperatures, pressures, damage,
+    fuel and g-force — on the phone sitting beside your wheel.
+  </p>
+
+  <div class="cta">
+    <a class="btn" href="/pc/">Download the bridge for Windows</a>
+    <a class="btn ghost" href="https://github.com/ICSZ-studios/RaptorDashBridge/releases">All releases</a>
+  </div>
+  <p class="fine">Free. Windows 10 or later. Installs per-user, no admin rights needed.</p>
+
+  <section>
+    <h2>How it works</h2>
+    <ul class="steps">
+      <li><b>01</b><p>Install the free RaptorDash Bridge on the PC you play on.</p></li>
+      <li><b>02</b><p>Put the phone on the same Wi-Fi network. The PC is found automatically.</p></li>
+      <li><b>03</b><p>Start your game. The bridge switches that game's telemetry on for you.</p></li>
+      <li><b>04</b><p>The dashboard fills in, and changes shape to suit the game.</p></li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>24 games supported</h2>
+    <div class="tags">
+      <span>DiRT Rally 2.0</span><span>DiRT Rally</span><span>DiRT 4</span>
+      <span>EA SPORTS WRC</span><span>WRC 10</span><span>WRC Generations</span>
+      <span>Assetto Corsa</span><span>Assetto Corsa Competizione</span>
+      <span>Assetto Corsa EVO</span><span>Assetto Corsa Rally</span>
+      <span>F1 25</span><span>F1 24</span><span>F1 23</span><span>F1 2022</span>
+      <span>F1 2021</span><span>F1 2020</span><span>F1 2019</span>
+      <span>iRacing</span><span>RaceRoom Racing Experience</span><span>Automobilista 2</span>
+      <span>Forza Horizon 5</span><span>KartKraft</span>
+      <span>Euro Truck Simulator 2</span><span>American Truck Simulator</span>
+    </div>
+  </section>
+
+  <section>
+    <h2>Privacy</h2>
+    <p class="note">
+      <b>Telemetry never leaves your network.</b> It travels directly from your PC
+      to your phone over your own Wi-Fi. There is no account, no sign-in, no
+      analytics and no advertising, and nothing is sent to a server of ours —
+      because there isn't one. <a href="/privacy/">Read the privacy policy</a>.
+    </p>
+  </section>
+</main>
+
+<footer class="wrap">
+  <p>
+    <a href="/pc/">Download</a> ·
+    <a href="/privacy/">Privacy</a> ·
+    <a href="https://github.com/ICSZ-studios/RaptorDashBridge">GitHub</a>
+  </p>
+  <p>© 2026 ICSZ Studios · ibrhmcmc@gmail.com</p>
+</footer>
+</html>

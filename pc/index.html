@@ -1,14 +1,56 @@
 <!doctype html>
+<html lang="en">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>RaptorDash Bridge</title>
+<title>Downloading RaptorDash Bridge</title>
 <meta http-equiv="refresh"
       content="0; url=https://github.com/ICSZ-studios/RaptorDashBridge/releases/latest/download/RaptorDashBridge-Setup.exe">
-<h1>RaptorDash Bridge</h1>
-<p>Your download should start automatically.</p>
-<p>If nothing happens,
-   <a href="https://github.com/ICSZ-studios/RaptorDashBridge/releases/latest/download/RaptorDashBridge-Setup.exe">click here to download it</a>.</p>
-<p>Windows 10 or later. Installs per-user, no admin rights needed.</p>
-<p>Windows may warn that it protected your PC — the installer is not
-   code-signed yet. Choose “More info”, then “Run anyway”.</p>
-<p><a href="/privacy/">Privacy policy</a></p>
+<style>
+  :root{--bg:#000;--s1:#0E0E11;--line:#1F1F25;--fg:#F2F2F5;--fg2:#9B9BA6;--fg3:#6A6A75;--hot:#FF7A1A}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--fg);
+       font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+       -webkit-font-smoothing:antialiased;
+       display:flex;align-items:center;justify-content:center;min-height:100vh;padding:24px}
+  .card{max-width:560px;width:100%}
+  .mark{display:flex;align-items:center;gap:11px;font-weight:800;letter-spacing:.14em;
+        font-size:13px;margin-bottom:28px}
+  .bar{width:7px;height:19px;background:var(--hot);border-radius:4px}
+  .mark span{color:var(--hot)}
+  h1{font-size:27px;margin:0 0 10px;letter-spacing:-.01em}
+  p{color:var(--fg2);margin:0 0 16px}
+  a.btn{display:inline-block;padding:13px 22px;border-radius:9px;text-decoration:none;
+        font-weight:600;font-size:15px;background:var(--hot);color:#140800;margin-bottom:22px}
+  a.btn:hover{filter:brightness(1.08)}
+  .note{background:var(--s1);border:1px solid var(--line);border-left:3px solid var(--hot);
+        border-radius:10px;padding:16px 18px;color:var(--fg2);font-size:14px}
+  .note b{color:var(--fg)}
+  .fine{color:var(--fg3);font-size:13px;margin-top:22px}
+  a{color:var(--hot)}
+</style>
+
+<div class="card">
+  <div class="mark"><i class="bar"></i>ICSZ <span>STUDIOS</span></div>
+
+  <h1>Downloading RaptorDash Bridge…</h1>
+  <p>Your download should start by itself. If nothing happens:</p>
+
+  <a class="btn"
+     href="https://github.com/ICSZ-studios/RaptorDashBridge/releases/latest/download/RaptorDashBridge-Setup.exe">
+    Download for Windows
+  </a>
+
+  <div class="note">
+    <b>Windows may say it protected your PC.</b> The installer is not
+    code-signed yet. Choose “More info”, then “Run anyway”. You can check the
+    file against the SHA-256 published with
+    <a href="https://github.com/ICSZ-studios/RaptorDashBridge/releases/latest">each release</a>
+    first if you prefer.
+  </div>
+
+  <p class="fine">
+    Windows 10 or later. Installs per-user, no admin rights needed. ·
+    <a href="/">ICSZ Studios</a> · <a href="/privacy/">Privacy</a>
+  </p>
+</div>
+</html>
