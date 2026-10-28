@@ -3,7 +3,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>ICSZ Studios — RaptorDash</title>
-<meta name="description" content="RaptorDash turns your phone into a live dashboard for sim racing, with a free Windows bridge that reads telemetry from 24 racing games.">
+<meta name="description" content="RaptorDash turns your phone into a live dashboard for sim racing, with a free Windows bridge that reads telemetry from 24 racing games. In Euro Truck Simulator 2 and American Truck Simulator it is also a button box, a gamepad and a head tracker.">
 <style>
   :root{
     --bg:#000; --s1:#0E0E11; --s2:#16161A; --line:#1F1F25;
@@ -61,7 +61,9 @@
   <p class="lede">
     RaptorDash shows live telemetry from the racing game on your PC — speed, revs,
     gear, lap and stage times, tyre and brake temperatures, pressures, damage,
-    fuel and g-force — on the phone sitting beside your wheel.
+    fuel and g-force — on the phone sitting beside your wheel. In Euro Truck
+    Simulator 2 and American Truck Simulator it is also a button box, a gamepad
+    and a head tracker.
   </p>
 
   <div class="cta">
@@ -78,6 +80,36 @@
       <li><b>03</b><p>Start your game. The bridge switches that game's telemetry on for you.</p></li>
       <li><b>04</b><p>The dashboard fills in, and changes shape to suit the game.</p></li>
     </ul>
+  </section>
+
+  <section>
+    <h2>For the trucks</h2>
+    <ul class="steps">
+      <li><b>BUTTON BOX</b><p>Lights, blinkers, hazards, wipers, retarder,
+        cruise control, engine, lift axles, cameras, seat and mirrors, one touch
+        each. Every key lights up from the truck's real state. Build your own
+        page with only the keys you use.</p></li>
+      <li><b>DRIVE WITH YOUR PHONE</b><p>Tilt it to steer, with two thumb pedals
+        for throttle and brake. No driver to install and no changes to your
+        control settings.</p></li>
+      <li><b>HEAD TRACKING</b><p>Prop the tablet under your monitor and its
+        front camera turns your view with your head, through opentrack. The
+        status bar tells you whether the game is following.</p></li>
+    </ul>
+    <p class="fine" style="margin:14px 0 0">The bridge installs its own input plugin
+      for the two truck games from its Button box window. Restart the game once
+      afterwards. Head tracking needs opentrack, which the bridge can download
+      from opentrack's official release and set up for you.</p>
+  </section>
+
+  <section>
+    <h2>Free and Pro</h2>
+    <p class="note">
+      <b>Free:</b> the dashboard for DiRT Rally, DiRT Rally 2.0 and DiRT 4.<br>
+      <b>Pro</b>, one payment with no subscription: the dashboard for every other
+      game, the detailed panels and every layout, the button box and head
+      tracking. The bridge is always free.
+    </p>
   </section>
 
   <section>
@@ -101,7 +133,10 @@
       <b>Telemetry never leaves your network.</b> It travels directly from your PC
       to your phone over your own Wi-Fi. There is no account, no sign-in, no
       analytics and no advertising, and nothing is sent to a server of ours —
-      because there isn't one. <a href="/privacy/">Read the privacy policy</a>.
+      because there isn't one. Head tracking uses Google's face detection on
+      the tablet itself: the camera picture never leaves the device, though
+      Google's library sends Google usage diagnostics that do not identify you.
+      <a href="/privacy/">Read the privacy policy</a>.
     </p>
   </section>
 </main>
