@@ -3,7 +3,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Privacy Policy — RaptorDash</title>
-<meta name="description" content="RaptorDash collects no personal data. Telemetry travels directly between your PC and your phone over your own network.">
+<meta name="description" content="RaptorDash collects no personal data. Telemetry travels directly between your PC and your phone over your own network, and the camera picture used for head tracking never leaves the device.">
 <style>
   :root{--bg:#000;--s1:#0E0E11;--line:#1F1F25;--fg:#F2F2F5;--fg2:#9B9BA6;--fg3:#6A6A75;--hot:#FF7A1A}
   *{box-sizing:border-box}
@@ -36,11 +36,11 @@
 
 <main class="wrap">
   <h1>Privacy Policy</h1>
-  <p class="upd">RaptorDash and RaptorDash Bridge · Last updated 7 October 2026</p>
+  <p class="upd">RaptorDash and RaptorDash Bridge · Last updated 28 October 2026</p>
 
   <p class="lead">
     RaptorDash does not collect, store or transmit any personal data. There is
-    no account, no sign-in, no analytics and no advertising.
+    no account, no sign-in, no analytics of ours and no advertising.
   </p>
 
   <h2>Where your telemetry goes</h2>
@@ -51,25 +51,57 @@
     operate no server that the app or the bridge connects to.
   </p>
 
+  <h2>The button box and driving with the phone</h2>
+  <p>
+    In Euro Truck Simulator 2 and American Truck Simulator, the keys you touch
+    and the phone's steering and pedals are sent to the bridge over the same
+    local network, and the bridge passes them to the game. Nothing is recorded.
+  </p>
+
+  <h2>Head tracking and the camera</h2>
+  <p>
+    Head tracking is off until you switch it on. While it is on and the
+    dashboard is open, the app uses the front camera to find your face. The
+    picture is processed on the device itself and is never stored or sent
+    anywhere. Only the angles of your head — left-right, up-down and tilt — go
+    to the bridge on your PC, over your local network.
+  </p>
+  <p>
+    The face detection is Google's ML Kit, running on the device. Like other
+    apps that use it, ML Kit sends Google diagnostic information about how the
+    library performs: the device model and Android version, the app's name and
+    version, an identifier for the installation that is not meant to identify
+    you or your device, and performance figures such as processing time and
+    error codes. It does not send the camera picture. Google describes this in
+    its <a href="https://developers.google.com/ml-kit/android-data-disclosure">ML Kit data disclosure</a>.
+  </p>
+
   <h2>What stays on your device</h2>
   <p>
-    Your settings — language, units, chosen layout — and your purchase state are
-    kept on your own device. Purchases, when they become available, are handled
-    by Google Play; we never see your payment details.
+    Your settings — language, units, chosen layout, your own key pages — and
+    your purchase state are kept on your own device. Purchases, when they become
+    available, are handled by Google Play; we never see your payment details.
   </p>
 
   <h2>What the bridge does on your PC</h2>
   <p>
     RaptorDash Bridge reads telemetry from the racing games installed on your PC,
     and may change those games' own telemetry settings so that they start sending
-    it. It does not read anything else on your computer, and it sends nothing
-    outside your local network.
+    it. For the two truck games it can install its own input plugin into the
+    game's folder. For head tracking it configures opentrack, and if you ask it
+    to, downloads opentrack's installer from opentrack's official GitHub release.
+    Uninstalling the bridge removes its input plugin and the opentrack settings it
+    added. It does not read anything else on your computer, and apart from that
+    download, it sends and fetches nothing outside your local network.
   </p>
 
   <h2>Permissions</h2>
   <p>
     The phone app uses the local network to reach the bridge, and keeps the
-    screen awake while a dashboard is open. It asks for nothing else.
+    screen awake while a dashboard is open. It asks for the camera only for
+    head tracking, and only when you switch head tracking on. It uses the
+    phone's motion sensor to steer when you drive with the phone. It asks for
+    nothing else.
   </p>
 
   <h2>Children</h2>
@@ -81,7 +113,9 @@
   <h2>Changes</h2>
   <p>
     If this ever changes — if an analytics tool or advertising were added, for
-    instance — this page will be updated before that version is released.
+    instance — this page will be updated before that version is released. The
+    28 October 2026 update added the button box, driving with the phone and
+    head tracking.
   </p>
 
   <h2>Contact</h2>
